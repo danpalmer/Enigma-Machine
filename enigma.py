@@ -110,17 +110,17 @@ if __name__ == '__main__':
 			else:
 				print " #  Machine not configured!"
 		elif command.startswith("HELP"):
-			print " # Commands:"
-			print " #  new          => resets the machine configuration"
-			print " #  reset        => resets the machine configuration"
-			print " #  add <a>:<b>  => adds the scrambler with id <id> and oriented to face the letter <orientation"
-			print " #  swap <a>:<b> => swaps the letters <a> and <b> on the virtual plugboard"
-			print " #  :<plaintext> => scrambles the given plaintext"
-			print " #    this will also decrypt a given cyphertext as long as the settings are the same"
-			print " #  "
-			print " #  test         => runs a test encrypt/decrypt and outputs the result"
-			print " #  help         => prints this message"
-			print " #  exit         => exits the script"
+			print """ # Commands:
+ #  new          => resets the machine configuration
+ #  reset        => resets the machine configuration
+ #  add <a>:<b>  => adds the scrambler with id <id> and oriented to face the letter <orientation
+ #  swap <a>:<b> => swaps the letters <a> and <b> on the virtual plugboard
+ #  :<plaintext> => scrambles the given plaintext
+ #    this will also decrypt a given cyphertext as long as the settings are the same
+ #  
+ #  test         => runs a test encrypt/decrypt and outputs the result
+ #  help         => prints this message
+ #  exit         => exits the script"""
 		elif command.startswith("TEST"):
 			test()
 		elif command.startswith("EXIT"):
